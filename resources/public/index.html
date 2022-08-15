@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Operator</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <style type="text/css">
+      body {
+        background: rgb(90,90,90);
+      }
+
+      div.heading {
+        background: rgb(150,150,150);
+        margin-left: 2em;
+        margin-right: 2em;
+        border: 2px solid black;
+      }
+
+      img.operator {
+        float: left;
+        margin-right: 3em;
+        margin-top: .25em;
+        margin-bottom: .25em;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      ul {
+        font-size: 15pt;
+      }
+
+      ol {
+        font-size: 15pt;
+      }
+
+      p {
+        font-size: 14pt;
+      }
+
+      div.section {
+        margin: 1em;
+        padding: 1em;
+
+        clear: both;
+
+        background: rgb(150,150,150);
+        border: 2px solid black;
+      }
+
+      div#demo {
+        display: table;
+      }
+
+      div.demo {
+        display: table-cell;
+        padding: 2em;
+      }
+
+      div#demo div#description {
+        display: table-cell;
+      }
+
+      div.demo select {
+        margin-left: 10em;
+        display: block;
+      }
+
+      div.demo input {
+         margin-left: 12em;
+         display: block;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="heading">
+
+      <img class="operator" src="operator.png" alt="picture of telephone operators"/>
+      <h1>Welcome to operator!</h1>
+
+      <ul class="toc">
+        <li><a href="#intro">What is Operator?</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#diff">How Operator is different</a></li>
+        <li><a href="#readyforzero">What Operator Means to ReadyForZero</a></li>
+        <li><a href="#works">How it works</a></li>
+      </ul>
+
+    </div>
+
+    <div class="section">
+      <h1 class="intro"><a name="intro">What is Operator?</a></h1>
+
+      <p>
+        Operator is nothing short of a paradigm shift in web
+        services. It is as revolutionary as the search engine was to the
+        web. I have dubbed it WYSWIG 2.0 or a smart service for smart
+        phones.
+      </p>
+
+      <p>
+        WYSWIG ? (W)hat (Y)ou (S)ay is (W)what you (G)et. All current
+        generation web services except search engines are fundamentally
+        *traversed* as networks of hyperlinks. Operator in contrast
+        interprets what the user *says* to the web service and
+        dynamically generates content specific to the user's query.
+      </p>
+
+      <p>
+        This query &amp; response model means that the user can talk/text
+        directly to the webservice and receive the results of their
+        queries/commands on their phone's browser.
+      </p>
+
+      <p>
+        Contrast these two models:
+      </p>
+
+      <ul>
+        <li>navigating <span>[home -> login -> accounts -> select history,select 10 transactions -> results]</span></li>
+        <li>
+          The user says "the last ten transactions on my account" and
+          receives a page that is the last ten transactions.
+        </li>
+      </ul>
+
+      <p>
+        This idea leverages three key technologies: the modern smartphone with a browser,
+        the twilio service, and the SMS messsage.
+      </p>
+
+      <p>
+        The user either calls or text's a twilio number. The new paradigm web service sends
+        back a SMS message with a hyperlink to the generated response to their query. They
+        say what they want the webservice to do, and they get a truly dynamic web page back
+        in a hyperlink they tap on.
+      </p>
+    </div>
+
+    <div class="section" id="demo">
+
+      <div class="demo">
+        <form method="post" action="test-interface">
+          <p>
+            <select name="test-number">
+              <option>15094817193</option>
+              <option>15097033231</option>
+            </select>
+            <textarea name="test-message" rows="10" cols="40"></textarea>
+            <input type="submit" name="action" value="submit"/>
+          </p>
+        </form>
+      </div>
+
+      <div id="description">
+        <h1><a name="demo">Demo</a></h1>
+
+        <p>
+          Try it out !! select a phone number and start talking to this
+          demo. For a twilio enabled demo please contact me
+          (509)-481-7193 for instructions on how to setup twilio.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h1><a name="diff">How Operator differs from existing web services paradigms</a></h1>
+
+      <p>
+        Some differences between the operator concept and existing web-services:
+      </p>
+
+      <p>
+        Operator is a leap beyond the search box on a website. A search
+        box simply searches the network of hyperlinks that *can be
+        crawled*. This is why they suck so bad. Because the content
+        returned is not a answer to what they asked, it is a list of
+        nodes in the network crawled by the search engine that seem to
+        match some keywords.
+      </p>
+
+      <p>
+        Operator is the future of web-services for Smart Phones. The
+        screen on a smart-phone is to small to manage or traverse a
+        classic "network of hyperlinks" model interface. Also the input
+        bandwith of a tiny or touch keyboard, or the user's time to talk
+        into a phone number is simply to small.
+      </p>
+
+      <p>
+        Do you hate "press 1 for x ... press 2 for y, press 3 to return
+        to the previous menu ... ? This is what happens when you use a
+        tree/network paradigm on a voice interface.
+      </p>
+
+      <p>
+        What operator is looking to do for web-services is what google did to
+        phones: being able to speak a command/query into the web-service, and
+        get back a screen full of what you *wanted*. Like saying "pizza hut" into
+        google, and getting back the nearest pizza hut with a phone number you
+        can tap to phone.
+      </p>
+    </div>
+
+    <div class="section">
+      <h1><a name="readyforzero">So What does this mean for ReadyForZero ?</a></h1>
+
+      <p>
+        Not only is the operator concept a unique (AFAIK) interface it is a paradigm
+        shift. Paradigm shifts generate buzz. Imagine demo'ing to the NY Times tuesday
+        tech team. That attention only comes from red-hot tech. Operator is hot *now*.
+      </p>
+
+      <p>
+        Operator is the future of web-services. Be the first on the block to do it
+        google style.
+      </p>
+
+      <p>
+        Who else does this ? Nobody ... I am serious. Only search engines really work
+        this way. Everyone else is still using a "network of hyperlinks" as their
+        web service UI model. Phone interfaces still use tree structured menus.
+      </p>
+    </div>
+
+    <div class="section">
+      <h1><a name="works">How does it work ?</a></h1>
+
+      <ol>
+        <li>The user talks or texts a query to the web-serice phone number.</li>
+        <li>Twilio translates/delivers the message via a POST to the web-server.</li>
+        <li>The web server analyzes the query. From the analysis a URI is generated.</li>
+        <li>
+          The response back to twilio in TwilML causes a text message to
+          be sent with the hyperlink to the URL of the dynamic
+          content
+        </li>
+        <li>
+          When the user taps on the hyperlink the smart-phone opens a browser window to
+          the URL. bam ... results in mere seconds. Exactly what they asked for.
+        </li>
+      </ol>
+    </div>
+
+  </body>
+</html>
